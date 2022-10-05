@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, Text } from 'react-native';
 import styled from 'styled-components/native';
-import { EmprestimoTela } from '../../infra/interface';
+import { EmprestimoStatus, EmprestimoTela } from '../../infra/interface';
 import { ProfileScreenProps, RouteNames } from '../../navigation/INavigation';
+import { HomeHeader } from './HomeHeader';
+import { HomeList } from './HomeList';
+import { EMPRESTIMO } from '../../__mocks__/mock';
 
 type HomeProps = ProfileScreenProps<RouteNames.Home>;
 
@@ -34,10 +37,13 @@ export const Home = ({ navigation, route }: HomeProps): JSX.Element => {
 
   return (
     <Container>
+      <HomeHeader />
       {screen === EmprestimoTela.Ativos && (
-        <View>
-          <Text>Ativos</Text>
-        </View>
+        <HomeList
+          data={EMPRESTIMO.filter((emprestimo) =>
+            [EmprestimoStatus.Aprovado].includes(emprestimo.status),
+          )}
+        />
       )}
       {screen === EmprestimoTela.Finalizados && (
         <View>

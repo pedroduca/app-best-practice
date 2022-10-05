@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components/native';
-import { colors } from './colors';
+import colors from './colors';
 
 export const theme = {
   colors: colors,

@@ -1,11 +1,19 @@
 export enum EmprestimoStatus {
-  ContratacaoAprovada = 'ContratacaoAprovada',
-  PropostaAprovada = 'PropostaAprovada',
-  PropostaCancelada = 'PropostaCancelada',
-  ContratoQuitado = 'ContratoQuitado',
+  Aprovado,
+  PropostaAprovada,
+  Cancelado,
 }
 
 export enum EmprestimoTela {
   Ativos,
   Finalizados,
+}
+
+export interface IItem {
+  id: number;
+  title: string;
+  date: string;
+  value: string;
+  status: EmprestimoStatus;
+  screen: EmprestimoTela;
 }
