@@ -2,15 +2,14 @@
 
 ## 💻 Repositorio
 
-Com passar do tempo eu criei alguns repositórios pessoais, e sempre utilizado a mesma config e decidi salvar meu tempo.
-
-Esse repositório, que é um "boilerplate", eu configurei para ser usado tanto para um projeto pequeno, como também para um projeto grande com múltiplas pessoas trabalhando simultaneamente. O que isso quer dizer?
+Como a ideia do desafio era sair um pouco da caixa, eu decidi não fazer um aplicativo por completo, mas tentar mostrar ao máximo como tomo decisões. Então decidi fazer um "boilerplate", eu configurei para ser usado tanto para um projeto pequeno, como também para um projeto grande com múltiplas pessoas trabalhando simultaneamente. O que isso quer dizer?
 
 - Priorizei formatação dos arquivos, para manter um padrão em todos os arquivos e todos que forem trabalhar no repositório possuirem as mesmas ferramentas.
-
 - Utilização de tecnologias/dependencias/libs já consolidadas, com comunidade ativa e utilizada em grandes empresas. Com isso não terá problema em estudar, procurar conteúdo sobre as techs.
 
-Opcional: Como sou bem chato com organização kkkkkk e caso queira ver um conteúdo mais detalhado do que aprendi sobre boas práticas e como defino, deixei um arquivo em docs/boas-praticas.md 🙂 
+Opcional: Como sou bem chato com organização kkkkkk e caso queira ver um conteúdo mais detalhado do que aprendi sobre boas práticas e como defino, deixei um arquivo em docs/boas-praticas.md 🙂
+
+Outro ponto que decidi trazer essa ideia foi que durante a conversa com Gustavo a gente tinha discutido sobre vcs hj trabalharem com JS e estarem com algumas ideias de mudanças, então fica também algumas sugestões de boas práticas, estrutura de arquivos entre outros.
 
 ## 🚀 Techs
 
@@ -18,27 +17,26 @@ Algumas tecnologias utilizadas
 
 ```
 "dependencies": {
-  "normalize.css": "^8.0.1",
-  "react": "^17.0.1",
-  "react-icons": "^4.1.0",
-  "styled-components": "^5.2.1",
-  "typescript": "^4.0.3",
+  "@react-navigation/native": "^6.0.13",
+  "@react-navigation/stack": "^6.3.1",
+  "eslint": "^8.24.0",
+  "expo": "~46.0.13",
+  "prettier": "^2.7.1",
+  "react": "18.0.0",
+  "react-native": "0.69.6",
+  "react-native-gesture-handler": "~2.5.0",
+  "react-native-safe-area-context": "4.3.1",
+  "react-native-screens": "~3.15.0",
+  "react-native-svg": "12.3.0",
+  "styled-components": "^5.3.6",
+  "typescript": "^4.6.3"
 },
 
 "devDependencies": {
-  "@types/styled-components": "^5.1.7",
-  "@typescript-eslint/eslint-plugin": "^4.10.0",
-  "@typescript-eslint/parser": "^4.10.0",
-  "eslint": "^7.15.0",
-  "eslint-config-airbnb": "^18.2.1",
-  "eslint-config-prettier": "^7.0.0",
-  "eslint-import-resolver-typescript": "^2.3.0",
-  "eslint-plugin-import": "^2.22.1",
-  "eslint-plugin-jsx-a11y": "^6.4.1",
-  "eslint-plugin-prettier": "^3.3.0",
-  "eslint-plugin-react": "^7.21.5",
-  "eslint-plugin-react-hooks": "^4",
-  "prettier": "^2.2.1"
+ "@babel/core": "^7.12.9",
+  "eslint-config-prettier": "^8.5.0",
+  "jest": "^29.1.2",
+  "react-native-svg-transformer": "^1.0.0"
 }
 ```
 
