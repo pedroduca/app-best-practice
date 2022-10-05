@@ -10,8 +10,6 @@ export interface IHomeItemProps {
 }
 
 export const HomeItem = ({ data }: IHomeItemProps): JSX.Element => {
-  console.log(data.status);
-
   return (
     <Container>
       <Header>
